@@ -1,0 +1,191 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <title>Care For</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light header px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand head" href="#"><span class="colorchange">Care For</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="http://127.0.0.1:8000/carefor/home/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our mission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <button class="btn btn-outline-danger">Donate us</button>
+          </li>
+
+        </ul>
+
+
+
+      </div>
+    </div>
+  </nav>
+
+  
+
+
+
+
+  <!-- <section class="help">
+    <div class="container-fluid helpsec">
+       <div class="container help">
+         <h1>They need Ur Help</h1>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dignissimos. Rem facere inventore aperiam reprehenderit nihil eum modi dolorum esse.</p>
+
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam suscipit, dolorem veritatis sed delectus ea deserunt maxime sapiente nam cumque?</p>
+         <a href="#" class="btn btn-outline-danger">Donate in case</a>
+       </div>
+      
+    </div>
+  </section>
+    -->
+
+
+
+
+
+
+    
+ 
+
+
+  <footer class="fixed-bottom">
+    <div class="footer-wrapper">
+    <div class="footer-area footer-padding">
+    <div class="container">
+    <div class="row justify-content-between">
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-8">
+    <div class="single-footer-caption mb-50">
+    <div class="single-footer-caption mb-20">
+    
+    <div class="footer-logo mb-35">
+    <a href="index.html"><img src="data:image/webp;base64,UklGRgIFAABXRUJQVlA4TPYEAAAvnkAKEO/kKpJtJ+obyPj3hAw08Jd2bTiOJElqsmc4bMB/n/CCL7o1ECJJUmxl7z4GB8/B8y+M8f8ZuLFtq27u/+9+MWdShN0w9aFC3IBrcOQKOHUHYmamD+f5BsgwYPy1hgMbDp6w8cQDT9xxwxVnHLHFLM7zp+/J8ilm67n/whRjSgsADQACxARDIQCGSQtgzACA2BA4uAC0gYBQ8MPCBg4ucAiDoXCEbfjBYDoqidN/0DgAhgITS2gcAKEBfxoAhAYIjIOUJVJ00FAmfhJVZTIy/vVheqNzloDOeP96sId96wUE6Z7/gUTCVeyqEYjk3J1HGumMflUu76/f9n1ZzMo2aqzV/zJqOY9v/d7fol4/2bmPo2mZNPSkGK/jpp+9pJYXQuMyiOwSCPn967psi27VLEVQ9V+SZZZ5Kob0+Y9gHAhJ4uuPYIRxqFMYp7+un9elc71f7eN4vpMmICLC0m7bNvbmJCe2nXrXZsza7lsred7Ytp0TO/m193nuc992vMG3iP5PgMNIsqpoqwZ5CspT8s/2oxyXQET/J4C0t9YWZXl9loiovaEa1c09tK/cENvFOaJW2Ho79hOb4rg43wpHb+c+YsVJprxOaNo/bInmCDS9+4cNQ/B/fx5/tNnySeDnh7/91SMAD5RZQ/VKxU0g+6efOg7glEKrZtqV9wBQbOz2e5QBW6Tsuy8CNUmZXzBRT+pL5Y6Z2DBau1Z7AJ7VaNNAVY+vwtnZ6lreuKScc36WoQ1XlR3ko3DWjWvVAKFKAvB1aMNFZQf5KJqZOZ5+GkBeSk/Oj/6ANhd0ajvJV8HMHKY2AWGt8XI0t+TU1EO+imFmju9UAO/VI0AsvSdtwJZrc5lZ8Q0kMzPJrImWmufYgL10zGyvCbIrom2byjbSNRXBzKHUj0DuxEj3akqgH25JGdihAZAYmqQr0D8agJ05NLc0gqYe+gdCmTnCod+MQ5WewHgbdKc4L/OgnUI01E4ufRFpYi9+ABTpAOIjByhT3JvTb2kDYvEEhPoz96aCDUVJikCWkpm5pB3Ig7NKI6lxSQUIVdIBXL14S7IZnBjfNTcwNtmiXHMXZMia3BvnN0ndbwlIklSAo1c1qBEZzvCYyrFmZFS54y70n/B9oz/IswzYzMwiYD2NGkUakeExkwP0ifw/By9XeDkJGR4TOfBFODOHOiQzuyZkICT3499qRHYApHvcFQCwpmVUueYumpk5oVMByoQAuKS8wA4kvX1xDACGRfoBpHvcFACwRkW6lVx3CUHMHNHJTf1WASQpLXACoXbOD1cVa0akH0DGW70cANaoyA7Ub+4okpl5L14OgEPf1FxSCT/KfqsGIJZaS+R690VB3YxIP4DTb3VyAFijIqOWkp1sgEJYd6szDGALtLMirUkXb/1VQImCuhmRXgDn3jkVAsCwyKgFAGfekMmEUI14a8YdeGmTrpGuF4deUcA9BXUzsgMAJ3/ZvYI6I6MWAJx9QYajQzrxVPtNtzXJgVDnKIeBfO9E1wfau6ugptdSkGeTcsKmrssCgLPPyXx196ofPu5VP3Z3Dd29amLFdcX5bLLyDPpfyb8n3tDCayVf7yn5+5RbWk+UK1r3yf//va1TrlzSKaL9YPJFczm0P0y9YCovYJ9AaefNlAbSvvGTw3flsl3mHu0ffziUK5fssujI6MNN+2dKzk3bMv8H" alt="" data-pagespeed-url-hash="1521338220" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+    </div>
+    <div class="footer-tittle">
+    <div class="footer-pera">
+    <p>Seddo eiusmod tempor incididunt ut labore et dolore magna aliqua. Conse ctetur pisicin elit, sed do eiusmod tempor.</p>
+    </div>
+    </div>
+    
+    <div class="footer-social">
+    <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="offset-xl-1 col-xl-2 col-lg-2 col-md-4 col-sm-6">
+    <div class="single-footer-caption mb-50">
+    <div class="footer-tittle">
+    <h4>Navigation</h4>
+    <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+    <div class="single-footer-caption mb-50">
+    <div class="footer-tittle">
+    <h4>Services</h4>
+    <ul>
+    <li><a href="#">Pet Care</a></li>
+    <li><a href="#">Pet Treatment</a></li>
+    <li><a href="#">Pet Trainingl</a></li>
+    <li><a href="#">Hygienic Care</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+    <div class="single-footer-caption mb-50">
+    <div class="footer-tittle mb-10">
+    <h4>Subscribe newsletter</h4>
+    <p>Subscribe our newsletter to get updates about our services and offers.</p>
+    </div>
+    
+    <div class="footer-form mb-20">
+    <div id="mc_embed_signup">
+    <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" class="subscribe_form relative mail_part" novalidate="true">
+    <input type="email" name="EMAIL" id="newsletter-form-email" placeholder="Enter your email" class="placeholder hide-on-focus">
+    <div class="form-icon">
+    <button type="submit" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm">
+    <i class="fas fa-arrow-right"></i>
+    </button>
+    </div>
+    <div class="mt-10 info"></div>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="footer-bottom-area">
+    <div class="container">
+    <div class="footer-border">
+    <div class="row">
+    <div class="col-xl-12 ">
+    <div class="footer-copy-right text-center">
+    <p>Copyright ©2020 All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Ayush jain</a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </footer>
+
+
+ 
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

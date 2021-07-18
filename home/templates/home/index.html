@@ -1,0 +1,494 @@
+
+<!doctype html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <title>Care For</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light header px-4">
+    <div class="container-fluid">
+      <a class="navbar-brand head" href="#"><span class="colorchange">Care For</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our mission</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <button type="button"  class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#donateModal">
+              Donate
+            </button>
+          </li>
+
+        </ul>
+
+
+
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="{% static 'image/slider-intro-image.jpg' %}" class="d-block w-100 " height="450" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Our Community, Our Charity</h3>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{% static 'image/slider-intro-image2.jpg' %}" class="d-block w-100" height="450" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Our Community, Our Charity</h3>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+
+  <section class="donate" id="donate">
+    <div class="container-fluid my-5">
+      <h1 class="text-center">Cause We are Serving</h1>
+
+      <div class="container my-5 d-flex justify-content-center align-items-center">
+        <div class="card mx-4 border" style="width: 18rem;">
+          <img src="{% static 'image/first.jpg' %}" class="card-img-top" alt="...">
+          <div class="progress" style="height: 9px;">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text1">Help Senior citizen</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-outline-danger">Donate</a>
+          </div>
+        </div>
+
+        <div class="card mx-4 border" style="width: 18rem;">
+          <img src="{% static 'image/first.jpg' %}"  class="card-img-top" alt="...">
+          <div class="progress" style="height: 9px;">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title text1">Help the Eco-system</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-outline-danger">Donate</a>
+          </div>
+        </div>
+
+        <div class="card mx-4 border" style="width: 18rem;">
+          <img src="{% static 'image/first.jpg' %}"  class="card-img-top" alt="...">
+          <div class="progress" style="height: 9px;">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title  text1">Sponser a child</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" type="submit" class="btn btn-outline-danger">Donate</a>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+  
+  <section id="aboutUs" class="my-5">
+    <div class="container-fluid  back my-4">
+     
+      <div class="row ">
+        <div class="
+              col-lg-6 col-md-12 col-sm-12
+              d-flex
+              align-items-center
+              justify-content-center
+            ">
+          <img src="{% static 'image/about.webp' %}"  class="about-us-img imag img-fluid img-responsive" alt="" />
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 my-2">
+          <h2 class="">About Us</h2>
+          <p class="lead">
+            PledgeWell is India based Fundraising Organisation. It is a free
+            platform, where you can register yourself in moments, and start
+            the drive to help the needy people out there. Our motto, is
+            <em>"Service before Self"</em>
+            and we are wholeheartedly committed to make our society a better
+            place for one and all.
+          </p>
+          <p class="lead">
+            We organise charity events on a large scale, gathering different
+            organisations, universities and schools to be a part of this
+            humane cause. Owing to the COVID - 19 crisis, our country is going
+            through, we have also launched COVID - 19 Relief Fund, to help
+            India beat the Pandemic.
+          </p>
+
+          <a href="#" class="btn btn-outline-danger" style="width: 25%; border-radius:10px ;">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- <section class="help">
+    <div class="container-fluid helpsec">
+       <div class="container help">
+         <h1>They need Ur Help</h1>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dignissimos. Rem facere inventore aperiam reprehenderit nihil eum modi dolorum esse.</p>
+
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam suscipit, dolorem veritatis sed delectus ea deserunt maxime sapiente nam cumque?</p>
+         <a href="#" class="btn btn-outline-danger">Donate in case</a>
+       </div>
+      
+    </div>
+  </section>
+    -->
+
+
+    <section id="ourMission" class="my-3">
+      <h1 class="text-center">Our Mission</h1>
+      <div class="py-4 back">
+        <div id="carouselExampleSlidesOnly" class="carousel container slide carousel-fade" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{% static 'image/our2.jpg' %}" class="d-block w-100" alt="Let all creatures breathe in equality." />
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'image/our3.jfif' %}" class="d-block w-100" alt="Let no one dies out of hunger." />
+            </div>
+            <div class="carousel-item">
+              <img src="{% static 'image/our2.jpg' %}" class="d-block w-100" alt="Right to education to one and all." />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="joinus" class="my-5">
+      <div class="container-fluid   my-4">
+       
+        <div class="row mx-3 ">
+         
+          <div class="col-lg-6 col-md-12 col-sm-12 ">
+            <h2 class="">Join us</h2>
+            <p class="lead">
+              PledgeWell is India based Fundraising Organisation. It is a free
+              platform, where you can register yourself in moments, and start
+              the drive to help the needy people out there. Our motto, is
+              <em>"Service before Self"</em>
+              and we are wholeheartedly committed to make our society a better
+              place for one and all.
+            </p>
+
+
+            
+  
+            <a href="#" class="btn btn-outline-danger my-4" style="width: 22%; border-radius:10px ;">Join Us</a>
+          </div>
+
+          <div class="
+          col-lg-6 col-md-12 col-sm-12
+          d-flex
+          align-items-center
+          justify-content-center
+        ">
+
+        <img src="{% static 'image/join1.jfif' %}" class="about-us-img imag mx-2" alt="" />
+        <img src="{% static 'image/join2.jfif' %}" class="about-us-img imag mx-2" alt="" />
+     
+    </div>
+        </div>
+      </div>
+    </section>
+
+
+    
+  <section id="contactUs" class="my-5 ">
+    <h1 class="text-center pb-4">Contact Us</h1>
+    <div class="container back">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-lg-5 col-md-6 col-sm-12">
+          <img src="contact.jpg" class="contact-img" alt="" />
+        </div>
+        <div class="col-lg-7 col-md-6 col-sm-12 my-2">
+          <form action="mailto:saumya_singh048@rocketmail.com" enctype="text/plain" method="POST">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <label for="fname">First Name</label>
+                <input id="fname" type="text" class="form-control" placeholder="Enter First Name" name="First_Name"
+                  required />
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <label for="lname">Last Name</label>
+                <input id="lname" type="text" class="form-control" placeholder="Enter Last Name" name="Last_Name"
+                  required />
+              </div>
+            </div>
+            <div class="form-group my-2">
+              <label for="InputEmail1">Email Address</label>
+              <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" name="Email_ID"
+                placeholder="xyz@example.com" />
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+           
+            <div class="form-group">
+              <label for="FormControlTextarea1">Share your charity experience with us.</label>
+              <textarea class="form-control" id="FormControlTextarea1" rows="3" name="charityExperience"
+                placeholder="Start writing from here..." required></textarea>
+            </div>
+            <button type="submit" value="submit" class="btn btn-outline-danger btn-lg my-2">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-wrapper">
+    <div class="footer-area footer-padding">
+    <div class="container">
+    <div class="row justify-content-between">
+    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-8">
+    <div class="single-footer-caption mb-50">
+    <div class="single-footer-caption mb-20">
+    
+    <div class="footer-logo mb-35">
+    <a href="index.html"><img src="data:image/webp;base64,UklGRgIFAABXRUJQVlA4TPYEAAAvnkAKEO/kKpJtJ+obyPj3hAw08Jd2bTiOJElqsmc4bMB/n/CCL7o1ECJJUmxl7z4GB8/B8y+M8f8ZuLFtq27u/+9+MWdShN0w9aFC3IBrcOQKOHUHYmamD+f5BsgwYPy1hgMbDp6w8cQDT9xxwxVnHLHFLM7zp+/J8ilm67n/whRjSgsADQACxARDIQCGSQtgzACA2BA4uAC0gYBQ8MPCBg4ucAiDoXCEbfjBYDoqidN/0DgAhgITS2gcAKEBfxoAhAYIjIOUJVJ00FAmfhJVZTIy/vVheqNzloDOeP96sId96wUE6Z7/gUTCVeyqEYjk3J1HGumMflUu76/f9n1ZzMo2aqzV/zJqOY9v/d7fol4/2bmPo2mZNPSkGK/jpp+9pJYXQuMyiOwSCPn967psi27VLEVQ9V+SZZZ5Kob0+Y9gHAhJ4uuPYIRxqFMYp7+un9elc71f7eN4vpMmICLC0m7bNvbmJCe2nXrXZsza7lsred7Ytp0TO/m193nuc992vMG3iP5PgMNIsqpoqwZ5CspT8s/2oxyXQET/J4C0t9YWZXl9loiovaEa1c09tK/cENvFOaJW2Ho79hOb4rg43wpHb+c+YsVJprxOaNo/bInmCDS9+4cNQ/B/fx5/tNnySeDnh7/91SMAD5RZQ/VKxU0g+6efOg7glEKrZtqV9wBQbOz2e5QBW6Tsuy8CNUmZXzBRT+pL5Y6Z2DBau1Z7AJ7VaNNAVY+vwtnZ6lreuKScc36WoQ1XlR3ko3DWjWvVAKFKAvB1aMNFZQf5KJqZOZ5+GkBeSk/Oj/6ANhd0ajvJV8HMHKY2AWGt8XI0t+TU1EO+imFmju9UAO/VI0AsvSdtwJZrc5lZ8Q0kMzPJrImWmufYgL10zGyvCbIrom2byjbSNRXBzKHUj0DuxEj3akqgH25JGdihAZAYmqQr0D8agJ05NLc0gqYe+gdCmTnCod+MQ5WewHgbdKc4L/OgnUI01E4ufRFpYi9+ABTpAOIjByhT3JvTb2kDYvEEhPoz96aCDUVJikCWkpm5pB3Ig7NKI6lxSQUIVdIBXL14S7IZnBjfNTcwNtmiXHMXZMia3BvnN0ndbwlIklSAo1c1qBEZzvCYyrFmZFS54y70n/B9oz/IswzYzMwiYD2NGkUakeExkwP0ifw/By9XeDkJGR4TOfBFODOHOiQzuyZkICT3499qRHYApHvcFQCwpmVUueYumpk5oVMByoQAuKS8wA4kvX1xDACGRfoBpHvcFACwRkW6lVx3CUHMHNHJTf1WASQpLXACoXbOD1cVa0akH0DGW70cANaoyA7Ub+4okpl5L14OgEPf1FxSCT/KfqsGIJZaS+R690VB3YxIP4DTb3VyAFijIqOWkp1sgEJYd6szDGALtLMirUkXb/1VQImCuhmRXgDn3jkVAsCwyKgFAGfekMmEUI14a8YdeGmTrpGuF4deUcA9BXUzsgMAJ3/ZvYI6I6MWAJx9QYajQzrxVPtNtzXJgVDnKIeBfO9E1wfau6ugptdSkGeTcsKmrssCgLPPyXx196ofPu5VP3Z3Dd29amLFdcX5bLLyDPpfyb8n3tDCayVf7yn5+5RbWk+UK1r3yf//va1TrlzSKaL9YPJFczm0P0y9YCovYJ9AaefNlAbSvvGTw3flsl3mHu0ffziUK5fssujI6MNN+2dKzk3bMv8H" alt="" data-pagespeed-url-hash="1521338220" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a>
+    </div>
+    <div class="footer-tittle">
+    <div class="footer-pera">
+    <p>Seddo eiusmod tempor incididunt ut labore et dolore magna aliqua. Conse ctetur pisicin elit, sed do eiusmod tempor.</p>
+    </div>
+    </div>
+    
+    <div class="footer-social">
+    <a href="https://bit.ly/sai4ull"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="offset-xl-1 col-xl-2 col-lg-2 col-md-4 col-sm-6">
+    <div class="single-footer-caption mb-50">
+    <div class="footer-tittle">
+    <h4>Navigation</h4>
+    <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Contact</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
+    <div class="single-footer-caption mb-50">
+    <div class="footer-tittle">
+    <h4>Services</h4>
+    <ul>
+    <li><a href="#">Pet Care</a></li>
+    <li><a href="#">Pet Treatment</a></li>
+    <li><a href="#">Pet Trainingl</a></li>
+    <li><a href="#">Hygienic Care</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-8">
+    <div class="single-footer-caption mb-50">
+    <div class="footer-tittle mb-10">
+    <h4>Subscribe newsletter</h4>
+    <p>Subscribe our newsletter to get updates about our services and offers.</p>
+    </div>
+    
+    <div class="footer-form mb-20">
+    <div id="mc_embed_signup">
+    <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" class="subscribe_form relative mail_part" novalidate="true">
+    <input type="email" name="EMAIL" id="newsletter-form-email" placeholder="Enter your email" class="placeholder hide-on-focus">
+    <div class="form-icon">
+    <button type="submit" name="submit" id="newsletter-submit" class="email_icon newsletter-submit button-contactForm">
+    <i class="fas fa-arrow-right"></i>
+    </button>
+    </div>
+    <div class="mt-10 info"></div>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="footer-bottom-area">
+    <div class="container">
+    <div class="footer-border">
+    <div class="row">
+    <div class="col-xl-12 ">
+    <div class="footer-copy-right text-center">
+    <p>Copyright ©2020 All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Ayush jain</a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </footer>
+
+
+ 
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+
+    <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="donateModal" tabindex="-1" aria-labelledby="donateModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="donateModalLabel">Payment</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action ="http://127.0.0.1:8000/carefor/home/" method="post">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="username" class="form-label">Name</label>
+            <input type="username" class="form-control" id="username" name = "name" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="amount" class="form-label">Amount</label>
+            <input type="text" class="form-control" name="amount" id="amount">
+          </div>
+          
+          <button type="submit" id="rzp-button1" class="btn btn-outline-danger">Submit</button>
+          <!-- <button id="rzp-button1">Pay</button> -->
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+{% if payment %}
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+var options = {
+    "key": "rzp_test_LR2V7TWcpMUYUm", // Enter the Key ID generated from the Dashboard
+    "amount": "{{payment.amount}}", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+    "currency": "INR",
+    
+    "name": "{{payment.name}}",
+    "description": "Test Transaction",
+    "image": "https://example.com/your_logo",
+    "order_id": "{{payment.id}}", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+    "handler": function (response){
+        alert(response.razorpay_payment_id);
+        alert(response.razorpay_order_id);
+        alert(response.razorpay_signature)
+    },
+    "prefill": {
+        "name": "Gaurav Kumar",
+        "email": "gaurav.kumar@example.com",
+        "contact": "9999999999"
+    },
+    "notes": {
+        "address": "Razorpay Corporate Office"
+    },
+    "theme": {
+        "color": "#3399cc"
+    }
+};
+var rzp1 = new Razorpay(options);
+rzp1.on('payment.failed', function (response){
+        alert(response.error.code);
+        alert(response.error.description);
+        alert(response.error.source);
+        alert(response.error.step);
+        alert(response.error.reason);
+        alert(response.error.metadata.order_id);
+        alert(response.error.metadata.payment_id);
+});
+document.getElementById('rzp-button1').onclick = function(e){
+    rzp1.open();
+    e.preventDefault();
+}
+</script>
+{% endif %}
+</body>
+
+</html>
